@@ -1,0 +1,97 @@
+<?php
+
+echo "hello";
+
+
+
+
+
+
+?>
+ <!DOCTYPE html>
+<html>
+<!--
+
+First Website
+and comment
+in html
+(comments can span multiple lines)
+
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+    
+    <head>
+        <meta charset="uft-8"/>
+		<title> Mohamad Khalifa: Welcome to my Kingdom</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+        
+    </head>
+    
+
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+  
+</style>
+		
+		<header>
+			<h1> Mohamad Khalifa</h1>
+			</header>
+			<nav>
+			<hr width="50%"/>
+			<a href="index.html">Home</a> 
+			<a href="about.html">About</a>
+			<a href="contact.html">Contact</a>
+			</nav>
+			<br  /><br  />
+			<div id="content">
+			    <table>
+			        <tr id="table-header">
+			            <td><strong>Programming Language</strong></td>
+			            <td><strong>Years Experience</strong></td>
+			        </tr>
+			        <tr class="table-row">
+			            <td>Java</td>
+			            <td>2</td>
+			        </tr>
+			         <tr class="table-row">
+			            <td>C++</td>
+			            <td>3</td>
+			        </tr>
+			         <tr class="table-row">
+			            <td>Python</td>
+			            <td>2</td>
+			        </tr>
+			         <tr class="table-row">
+			            <td>Java</td>
+			            <td>1</td>
+			        </tr>
+			    </table>
+			</div>
+	
+        <ul>
+            <li><spane class="hobby">Exercise</spane>: I like two spent about a hour an a half at the gym 5 times a week</li>
+            <li><spane class="hobby">Hiking</spane>: I try to go hiking about everyother weeks, one of my favorite things to do!</li>
+            <li><spane class="hobby">Programming</spane>:My favorite language to program in is java, because its a flexible language</li>
+            <li><spane class="hobby">Football</spane>:I played college football, i still watch football every sunday</li>
+        </ul>
+        <footer>
+			<hr>
+			 Internet Programming Fall 2017; Khalifa<br />
+			 <string> Disclaimer:</string> The information in this webpage
+			 is fictitous. <br />
+			 it used for academic purposes only.
+			 <figure id="csumb">
+					<image src="img/logo.jpg"/>
+				</figure>
+			 
+		</footer>
+        <!-- closing footer -->
+        
+    </body>
+    <!-- closing body -->
+
+</html>
