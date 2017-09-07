@@ -1,0 +1,21 @@
+[07-Sep-2017 03:24:06 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php on line 70
+[07-Sep-2017 03:24:18 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php on line 70
+[07-Sep-2017 03:24:44 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php on line 70
+[07-Sep-2017 03:25:48 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php on line 70
+[07-Sep-2017 03:25:50 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php on line 70
+[07-Sep-2017 04:06:49 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/mkhalifa12/labs/lab2/inc/functions.php on line 6
+[07-Sep-2017 04:06:49 UTC] PHP Stack trace:
+[07-Sep-2017 04:06:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php:0
+[07-Sep-2017 04:06:49 UTC] PHP   2. play() /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php:11
+[07-Sep-2017 04:06:50 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/mkhalifa12/labs/lab2/inc/functions.php on line 6
+[07-Sep-2017 04:06:50 UTC] PHP Stack trace:
+[07-Sep-2017 04:06:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php:0
+[07-Sep-2017 04:06:50 UTC] PHP   2. play() /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php:11
+[07-Sep-2017 04:07:26 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/mkhalifa12/labs/lab2/inc/functions.php on line 6
+[07-Sep-2017 04:07:26 UTC] PHP Stack trace:
+[07-Sep-2017 04:07:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php:0
+[07-Sep-2017 04:07:26 UTC] PHP   2. play() /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php:11
+[07-Sep-2017 04:08:16 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/mkhalifa12/labs/lab2/inc/functions.php on line 6
+[07-Sep-2017 04:08:16 UTC] PHP Stack trace:
+[07-Sep-2017 04:08:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php:0
+[07-Sep-2017 04:08:16 UTC] PHP   2. play() /home/ubuntu/workspace/mkhalifa12/labs/lab2/index.php:11
