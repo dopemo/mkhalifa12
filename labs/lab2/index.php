@@ -9,16 +9,17 @@
     </head>
     <body>
     <div id="main">
-        <?php
         
-            include 'inc/functions.php';
-            play();
-        ?>
-        <form>
-            <input type="submit" value="Spin!"/>
-        </form>
-    </div>
+       <?php
        
-      
+            include 'functions.php';
+            play();
+       
+       ?>
+       <form>
+           <input type="submit" value="spin" sound="jackpot"/>
+       </form>
+      </div>
+        
     </body>
 </html>

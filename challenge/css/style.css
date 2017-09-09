@@ -1,0 +1,22 @@
+h1{
+    font-size:180%;
+    text-align:center;
+}
+#human{
+    
+    float:left;
+}
+#computer{
+    float:right;
+}
+.container
+{
+    width:70%;
+    margin:auto;
+    
+}
+#winner
+{
+    text-align: center;
+    clear:right;
+}
