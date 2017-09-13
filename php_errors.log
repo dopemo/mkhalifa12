@@ -21,3 +21,9 @@
 [08-Sep-2017 20:46:18 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/mkhalifa12/challenge/functions.php on line 60
 [08-Sep-2017 20:46:18 UTC] PHP Stack trace:
 [08-Sep-2017 20:46:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/challenge/random.php:0
+[11-Sep-2017 09:28:34 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/mkhalifa12/challenge/practicerun.php on line 51
+[11-Sep-2017 09:28:34 UTC] PHP Stack trace:
+[11-Sep-2017 09:28:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/challenge/runner.php:0
+[11-Sep-2017 09:28:35 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/mkhalifa12/challenge/practicerun.php on line 51
+[11-Sep-2017 09:28:35 UTC] PHP Stack trace:
+[11-Sep-2017 09:28:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/challenge/runner.php:0
