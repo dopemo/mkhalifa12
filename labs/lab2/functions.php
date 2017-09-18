@@ -3,7 +3,7 @@ function play(){
        
        $randomValue=rand(0,3);
        $randomValue1=rand(0,3);
-       $randomValue2-rand(0,3);
+       $randomValue2=rand(0,3);
        $randomValue3=rand(0,3);
        $randomValue4=rand(0,3);
 function displayPoints($randomValue1,$randomValue2,$randomValue3){

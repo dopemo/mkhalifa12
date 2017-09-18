@@ -1,0 +1,17 @@
+h2.solid{
+    border-style: solid;
+    text-align:center;
+    
+}
+body{
+   
+    text-align:center;
+    float:center;
+    background-color:black;
+    color:gray;
+}
+#content {
+   width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+}
