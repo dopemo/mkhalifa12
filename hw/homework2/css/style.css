@@ -3,7 +3,6 @@ h2.solid{
     text-align:center;
     background-color:black;
     float:center;
-    width:80%;
     
     
 }
@@ -26,6 +25,7 @@ h3{
     border-style:solid;
     border-color:red;
     background-color:green;
+    text-align:center;
 }
 p{
     color:red;

@@ -127,6 +127,7 @@
     $randomPlayer4=rand(0,1);
     $randomPlayer5=rand(0,1);
     $randomPlayer6=rand(0,1);
+    $score=$score+displayScore($randomPlayer);
     $score=$score+displayScore($randomPlayer2);
     $score=$score+displayScore($randomPlayer3);
     $score=$score+displayScore($randomPlayer4);
@@ -157,7 +158,7 @@
     echo "<img src='nfl_players/$players_DBs[$randomPlayer6].png' title='$players_DBs[$randomPlayer6]' alt='hello' width='70'>";
     echo "<br/>";
     
-    echo "your teams overall score ";
+    echo "Your teams overall score: ";
         displayStuff($score);
                             
         }
@@ -175,6 +176,7 @@
     $randomPlayer4=rand(2,3);
     $randomPlayer5=rand(2,3);
     $randomPlayer6=rand(2,3);
+    $score=$score+displayScore($randomPlayer);
     $score=$score+displayScore($randomPlayer2);
     $score=$score+displayScore($randomPlayer3);
     $score=$score+displayScore($randomPlayer4);
@@ -204,7 +206,7 @@
         echo " ";
     echo "<img src='nfl_players/$players_DBs[$randomPlayer6].png' title='$players_DBs[$randomPlayer6]' alt='hello' width='70'>";
     echo "<br/>";
-    echo "your teams overall score ";
+    echo "Your teams overall score: ";
         displayStuff($score);
                             
         }
@@ -222,6 +224,7 @@
     $randomPlayer4=rand(4,5);
     $randomPlayer5=rand(4,5);
     $randomPlayer6=rand(4,5);
+    $score=$score+displayScore($randomPlayer);
     $score=$score+displayScore($randomPlayer2);
     $score=$score+displayScore($randomPlayer3);
     $score=$score+displayScore($randomPlayer4);
@@ -251,7 +254,7 @@
         echo " ";
     echo "<img src='nfl_players/$players_DBs[$randomPlayer6].png' title='$players_DBs[$randomPlayer6]' alt='hello' width='70'>";
     echo "<br/>";
-     echo "your teams overall score ";
+     echo "Your teams overall score ";
         displayStuff($score);
                             
         }
