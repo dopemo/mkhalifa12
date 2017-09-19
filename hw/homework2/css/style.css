@@ -1,17 +1,32 @@
 h2.solid{
     border-style: solid;
     text-align:center;
+    background-color:black;
+    float:center;
+    width:80%;
+    
     
 }
 body{
    
     text-align:center;
-    float:center;
-    background-color:black;
-    color:gray;
+    
+    color:red;
+     background-image: url("nfl2.png");
+     float:center;
+    
 }
 #content {
    width: 600px;
    margin-left: auto;
    margin-right: auto;
+}
+h3{
+    color:grey;
+    border-style:solid;
+    border-color:red;
+    background-color:green;
+}
+p{
+    color:red;
 }

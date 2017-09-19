@@ -60,3 +60,19 @@
 [15-Sep-2017 17:02:24 UTC] PHP Parse error:  syntax error, unexpected '(', expecting ']' in /home/ubuntu/workspace/mkhalifa12/hw/homework2/functions.php on line 33
 [15-Sep-2017 17:02:24 UTC] PHP Stack trace:
 [15-Sep-2017 17:02:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php:0
+[18-Sep-2017 17:29:16 UTC] PHP Fatal error:  Call to undefined function randomPlayer() in /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php on line 27
+[18-Sep-2017 17:29:16 UTC] PHP Stack trace:
+[18-Sep-2017 17:29:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php:0
+[19-Sep-2017 01:18:07 UTC] PHP Fatal error:  Call to undefined function displaySuff() in /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php on line 22
+[19-Sep-2017 01:18:07 UTC] PHP Stack trace:
+[19-Sep-2017 01:18:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php:0
+[19-Sep-2017 01:18:28 UTC] PHP Parse error:  syntax error, unexpected ';' in /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php on line 22
+[19-Sep-2017 01:18:36 UTC] PHP Fatal error:  Call to undefined function displaySuff() in /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php on line 22
+[19-Sep-2017 01:18:36 UTC] PHP Stack trace:
+[19-Sep-2017 01:18:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php:0
+[19-Sep-2017 01:37:33 UTC] PHP Parse error:  syntax error, unexpected 'display_year' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/mkhalifa12/hw/homework2/functions.php on line 95
+[19-Sep-2017 01:37:33 UTC] PHP Stack trace:
+[19-Sep-2017 01:37:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php:0
+[19-Sep-2017 01:37:34 UTC] PHP Parse error:  syntax error, unexpected 'display_year' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/mkhalifa12/hw/homework2/functions.php on line 95
+[19-Sep-2017 01:37:34 UTC] PHP Stack trace:
+[19-Sep-2017 01:37:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/hw/homework2/index.php:0
