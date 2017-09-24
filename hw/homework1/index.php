@@ -11,7 +11,7 @@
         <h1>Life Cycle of Software</h1>
         <hr width="100%"/>
         <div id="pic">
-        <img src="img/tireswing.png" alt="graphic of display"</a>
+        <img src="img/alex.png" alt="graphic of display"</a>
         </div>
         </center>
         <br/><br/>

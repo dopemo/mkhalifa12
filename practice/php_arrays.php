@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     function displaySymbol($symbol)
     {
@@ -38,6 +39,7 @@
     $random=rand(0,2);
     //displaySymbol($symbol[rand(0,count($symbol)-1)]);
     displaySymbol($symbol[array_rand($symbol)]);
+    echo $_SESSION["juan"];
 
 
 ?>

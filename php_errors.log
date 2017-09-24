@@ -27,3 +27,83 @@
 [11-Sep-2017 09:28:35 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/mkhalifa12/challenge/practicerun.php on line 51
 [11-Sep-2017 09:28:35 UTC] PHP Stack trace:
 [11-Sep-2017 09:28:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/challenge/runner.php:0
+[20-Sep-2017 20:06:52 UTC] PHP Warning:  key() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:06:52 UTC] PHP Stack trace:
+[20-Sep-2017 20:06:52 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:06:52 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:06:53 UTC] PHP Warning:  key() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:06:53 UTC] PHP Stack trace:
+[20-Sep-2017 20:06:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:06:53 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:07:07 UTC] PHP Warning:  key() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:07:07 UTC] PHP Stack trace:
+[20-Sep-2017 20:07:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:07:07 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:07:09 UTC] PHP Warning:  key() expects parameter 1 to be array, integer given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:07:09 UTC] PHP Stack trace:
+[20-Sep-2017 20:07:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:07:09 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:07:17 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:07:18 UTC] PHP Stack trace:
+[20-Sep-2017 20:07:18 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:07:18 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:07:20 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:07:20 UTC] PHP Stack trace:
+[20-Sep-2017 20:07:20 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:07:20 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:07:21 UTC] PHP Warning:  key() expects parameter 1 to be array, string given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:07:21 UTC] PHP Stack trace:
+[20-Sep-2017 20:07:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:07:21 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:07:33 UTC] PHP Fatal error:  Call to undefined function value() in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:07:33 UTC] PHP Stack trace:
+[20-Sep-2017 20:07:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:07:34 UTC] PHP Fatal error:  Call to undefined function value() in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:07:34 UTC] PHP Stack trace:
+[20-Sep-2017 20:07:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:07:34 UTC] PHP Fatal error:  Call to undefined function value() in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:07:34 UTC] PHP Stack trace:
+[20-Sep-2017 20:07:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:07:35 UTC] PHP Fatal error:  Call to undefined function value() in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:07:35 UTC] PHP Stack trace:
+[20-Sep-2017 20:07:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:08:26 UTC] PHP Warning:  key() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:08:26 UTC] PHP Stack trace:
+[20-Sep-2017 20:08:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:08:26 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:08:27 UTC] PHP Warning:  key() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:08:27 UTC] PHP Stack trace:
+[20-Sep-2017 20:08:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:08:27 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:09:12 UTC] PHP Warning:  key() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 5
+[20-Sep-2017 20:09:12 UTC] PHP Stack trace:
+[20-Sep-2017 20:09:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:09:12 UTC] PHP   2. key() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:5
+[20-Sep-2017 20:09:12 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 6
+[20-Sep-2017 20:09:12 UTC] PHP Stack trace:
+[20-Sep-2017 20:09:12 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:09:12 UTC] PHP   2. array_keys() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:6
+[20-Sep-2017 20:09:22 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 6
+[20-Sep-2017 20:09:22 UTC] PHP Stack trace:
+[20-Sep-2017 20:09:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:09:22 UTC] PHP   2. array_keys() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:6
+[20-Sep-2017 20:09:28 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 6
+[20-Sep-2017 20:09:28 UTC] PHP Stack trace:
+[20-Sep-2017 20:09:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:09:28 UTC] PHP   2. array_keys() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:6
+[20-Sep-2017 20:09:31 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/mkhalifa12/practice/practice2.php on line 6
+[20-Sep-2017 20:09:31 UTC] PHP Stack trace:
+[20-Sep-2017 20:09:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:0
+[20-Sep-2017 20:09:31 UTC] PHP   2. array_keys() /home/ubuntu/workspace/mkhalifa12/practice/practice2.php:6
+[20-Sep-2017 20:21:07 UTC] PHP Fatal error:  Call to undefined function start() in /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php on line 2
+[20-Sep-2017 20:21:07 UTC] PHP Stack trace:
+[20-Sep-2017 20:21:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php:0
+[20-Sep-2017 20:21:08 UTC] PHP Fatal error:  Call to undefined function start() in /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php on line 2
+[20-Sep-2017 20:21:08 UTC] PHP Stack trace:
+[20-Sep-2017 20:21:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php:0
+[20-Sep-2017 20:21:09 UTC] PHP Fatal error:  Call to undefined function start() in /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php on line 2
+[20-Sep-2017 20:21:09 UTC] PHP Stack trace:
+[20-Sep-2017 20:21:09 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php:0
+[20-Sep-2017 20:21:10 UTC] PHP Fatal error:  Call to undefined function start() in /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php on line 2
+[20-Sep-2017 20:21:10 UTC] PHP Stack trace:
+[20-Sep-2017 20:21:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php:0
