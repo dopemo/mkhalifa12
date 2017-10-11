@@ -1,0 +1,23 @@
+h1{
+    float:center;
+    text-align:center;
+    border-style:solid;
+    border-color:red;
+    background-color: lightgrey;
+}
+h2{
+    float:center;
+    text-align:center;
+    border-style:solid;
+    border-color:red;
+    background-color: lightgrey;
+}
+h3{
+    text-align:center;
+    float:center;
+    /*border-style:solid;*/
+    border-color:red;
+    /*background-color: lightgrey;*/
+    color:white;
+}
+    

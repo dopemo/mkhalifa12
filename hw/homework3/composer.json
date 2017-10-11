@@ -1,0 +1,5 @@
+{
+    "require": {
+        "rapidapi/rapidapi-connect": "^0.0.2"
+    }
+}
