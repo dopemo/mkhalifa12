@@ -4,7 +4,8 @@ $conn=dbConnection();
    function getDeviceTypes() {
     global $conn;
     $sql = "SELECT DISTINCT(deviceType)
-            FROM `tc_device`";
+            FROM `tc_device` 
+            ORDER BY deviceType";
     
     $stmt = $conn->prepare($sql);
     $stmt->execute();
