@@ -1,0 +1,15 @@
+h3{
+    
+    width:40;
+    float:center;
+    text-align:center;
+    
+}
+body{
+    text-align:center;
+    background-image: url("../tech.png");
+    
+}
+h1{
+    border-color:green;
+}

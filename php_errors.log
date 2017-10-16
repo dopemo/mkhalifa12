@@ -107,3 +107,12 @@
 [20-Sep-2017 20:21:10 UTC] PHP Fatal error:  Call to undefined function start() in /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php on line 2
 [20-Sep-2017 20:21:10 UTC] PHP Stack trace:
 [20-Sep-2017 20:21:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/php_arrays.php:0
+[11-Oct-2017 19:48:17 UTC] PHP Fatal error:  Call to undefined function getUsersAndDepartments() in /home/ubuntu/workspace/mkhalifa12/practice/sqljoins.php on line 24
+[11-Oct-2017 19:48:17 UTC] PHP Stack trace:
+[11-Oct-2017 19:48:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/sqljoins.php:0
+[11-Oct-2017 20:05:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'dept.Id' in 'field list'' in /home/ubuntu/workspace/mkhalifa12/practice/sqljoins.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/practice/sqljoins.php(14): PDOStatement->execute()
+#1 /home/ubuntu/workspace/mkhalifa12/practice/sqljoins.php(36): getUsersAndDepartments()
+#2 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/practice/sqljoins.php on line 14

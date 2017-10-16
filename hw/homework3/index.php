@@ -11,13 +11,17 @@
             if(!empty($_GET['category'])&&empty($_GET['interest']))
             {
                 $interest=$_GET['category'];
-                $products=findBooks($interest);
+               
+               $products=findBooks($interest);
+              
+                
             }
             else
             {
                 
                 $interest=$_GET['interest'];
-                $products=findBooks($interest);
+               $products=findBooks($interest);
+                
             }
         
    
@@ -68,7 +72,7 @@
     </head>
     <style>
     body{
-        background-image: url("img/bround.png");
+        /*background-image: url("img/bround.png");*/
     }
     </style>
     <body>
@@ -81,6 +85,7 @@
         <form>
             <input type="text" name="interest" Placeholder="interest"value="<?=$_GET['interest']?>">
             <input type="submit" name="Generate">
+            <br/>
             <input type="radio" name="result" value="movies">Movies
             <input type="radio" name="result" value="products">Products
             <select name="category">
@@ -103,20 +108,24 @@
                      
                if($_GET['result']=="products")
                {
-                    echo "<div style='background-color:red;color:white;padding:20px'>
-                     <h3>
-                     <ul>
-                     <li>$products[$i]</li>
-                     </ul>
-                     </h3>
-                </div>";
+                    echo "<div>";
+                    echo "<h2>";
+                    echo "<ul>";
+                    echo "<li>" . "<img src='$products[$i] width='100'>" . "<li>";
+                    $i++;
+                    echo"<li>" . $products[$i] . "<li>";
+                    echo "</ul>";
+                    echo "</h2>";
+                    echo "</div>";
+                    
+                
                }
              else if($_GET['result']=="movies")
               {
-                echo "<div style='background-color:red;color:white;padding:20px'>
+                echo "<div>
                      <h3>
                      <ul>
-                     <li><img src=$imageURLs[$i] width='200' ></li>
+                     <li><img src=$imageURLs[$i] width='100' ></li>
                      </ul>
                      </h3>
                 </div>";

@@ -2,11 +2,14 @@
     
     function test($interest) 
     {
+            
             $curl = curl_init();
+            $key=getenv('movie_key');
             
             curl_setopt_array($curl, array(
+        
             
-              CURLOPT_URL => "https://api.themoviedb.org/3/search/movie?api_key=8e56967b0a4b849899773bc9ad998665&query=$interest&page=1&include_adult=false",
+              CURLOPT_URL => "https://api.themoviedb.org/3/search/movie?api_key=$key;&query=$interest&page=1&include_adult=false",
               CURLOPT_RETURNTRANSFER => true,
               CURLOPT_ENCODING => "",
               CURLOPT_MAXREDIRS => 10,
@@ -62,9 +65,16 @@ function findBooks($interest)
            $jsonData = curl_exec($curl);
     $data = json_decode($jsonData, true); //true makes it an array!
     $imageURLs = array();
+    //$item="items";
+    //$thumbnailImage="thumbnailImage";
+   
     for ($i = 0; $i < 99; $i++) 
     {
+        
+            $imageURLs[] = $data['items'][$i]['thumbnailImage'];
+            $i++;
             $imageURLs[] = $data['items'][$i]['name'];
+            
              //$config['images']['base_url']
              //$imageURLs[]=$data['images'][$i]['base_url'];
              //$imageURLs[]+=$data['images'][$i]['secure_base_url'];
