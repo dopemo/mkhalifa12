@@ -18,6 +18,7 @@ use PMA\libraries\LanguageManager;
  * Gets some core libraries and displays a top message if required
  */
 require_once 'libraries/common.inc.php';
+// SELECT * FROM mp_county c LEFT JOIN mp_town t ON c.county_id = t.county_id WHERE t.county_id IS NULL
 
 /**
  * display Git revision if requested

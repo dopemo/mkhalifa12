@@ -1,8 +1,8 @@
 <?php
-function dbConnection()
+function dbConnection($dbname="tcp")
 {
    $host = 'localhost';//cloud 9
-    $dbname = 'tcp';
+   // $dbname = 'tcp';
     $username = 'root';
     $password = '';
     

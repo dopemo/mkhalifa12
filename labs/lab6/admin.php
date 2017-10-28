@@ -16,12 +16,7 @@ $namedParameter=array();
  $stmt = $conn->prepare($sql);
 $stmt->execute();
 $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
- foreach ($records as $record)
-{
-            
-        echo $record['firstName'] . " " . $record['lastName'] . "user ID: " . $record['userId'] . "<br/>";
-            
-    }
+return $records;
          
 
 
@@ -47,6 +42,7 @@ function searchUser()
         {
                     
              echo $record['firstName'] . "  " . $record['lastName'] . " user ID: " . $record['userId'] . "<br/>";
+             
             
         }
          
@@ -55,14 +51,12 @@ function searchUser()
         
     
 }
-function logout()
-{
+
     if(isset($_GET['logout']))
     {
         header("Location: index.php");
         exit();
     }
-}
 ?>
 
 
@@ -71,21 +65,44 @@ function logout()
     <head>
         <title>admin Page</title>
     </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+        body{
+            text-align:center;
+        }
+    </style>
     <body>
         <h1>TCP ADMIN PAGE</h1>
          <h2> Welcome <?=$_SESSION['adminFullName']?>! </h2>
          <form>
-             <input type="text" name="firstName" placeholder="searchuser"/>
              <input type="submit" name="submit" value="submit"/>
              <input type="submit" name="logout" value="logout"/>
          </form>
+          <form action="addUser.php">
+            
+            <input type="submit" value="Add new User" />
+            
+        </form>
         
         <hr>
         <?php
-        echo "<strong>SEARCHED FOR:  " . $_GET['firstName']. "</strong><br>";
-        echo "results: <br>";
+         
+        $users =displayUsers();
+        
+        foreach($users as $user) {
+            
+            
+            echo "[<a href='updateUser.php?userId=".$user['userId']."'>" . $user['firstName']  . " " . $user['lastName'] . " " . $user['userId'] . "</a> ]";
+            echo "<br />";
+           echo "<form action='deleteUser.php' style='display:inline' onsubmit='return confirmDelete(\"".$user['firstName']."\")'>
+                     <input type='hidden' name='userId' value='".$user['userId']."' />
+                     <input type='submit' value='Delete'>
+                  </form>
+                ";
+            
+            echo "<br />";
+        }
         ?>
-        <?=searchUser()?>
         <?=logout()?>
         
 
