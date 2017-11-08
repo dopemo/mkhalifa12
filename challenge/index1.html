@@ -5,7 +5,7 @@
     </head>
     <h1> Sorting Numbers</h1>
     <body>
-        <form name="myForm" action="/action_page.php"
+        <form name="myForm" 
         onsubmit="return validateForm()" method="post">
         Number: <input type="text" name="fname" style="width:50px;">
    
@@ -15,12 +15,12 @@
         Number: <input type="text" name="fname1" style="width:50px;">
     
         </form>
-        <form name="myForm2" action="/action_page.php"
+        <form name="myForm2" 
         onsubmit="return validateForm()" method="post">
         Number: <input type="text" name="fname2" style="width:50px;">
     
         </form>
-        <form name="submiButton" action="/action_page.php"
+        <form name="submiButton" 
          onsubmit="return validateForm()" method="post">
             <input type="submit" name="sort">
             </form>
@@ -31,8 +31,12 @@
     var y = document.forms["myForm1"]["fname1"].value;
     var z = document.forms["myForm2"]["fname2"].value;
     var myArray=[x,y,z];
-    myArray.sort();
-    
+   
+            function sortNumber(a,b) {
+                     return a - b;
+            }
+            myArray.sort(sortNumber);
+
     
             if (x == "") 
             {
