@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <h1> Sorting Numbers</h1>
+    <body>
+        <form name="myForm" action="/action_page.php"
+        onsubmit="return validateForm()" method="post">
+        Number: <input type="text" name="fname" style="width:50px;">
+   
+        </form>
+        <form name="myForm1" action="/action_page.php"
+        onsubmit="return validateForm()" method="post">
+        Number: <input type="text" name="fname1" style="width:50px;">
+    
+        </form>
+        <form name="myForm2" action="/action_page.php"
+        onsubmit="return validateForm()" method="post">
+        Number: <input type="text" name="fname2" style="width:50px;">
+    
+        </form>
+        <form name="submiButton" action="/action_page.php"
+         onsubmit="return validateForm()" method="post">
+            <input type="submit" name="sort">
+            </form>
+        <script>
+            function validateForm()
+                {
+    var x = document.forms["myForm"]["fname"].value;
+    var y = document.forms["myForm1"]["fname1"].value;
+    var z = document.forms["myForm2"]["fname2"].value;
+    var myArray=[x,y,z];
+    myArray.sort();
+    
+    
+            if (x == "") 
+            {
+            alert("Name must be filled out");
+            return false;
+            }
+            else
+            {
+                document.write("<h2> The biggest number is "+myArray[2]+"</h2>");
+               
+                    document.write("<h3> The numbers in Acsending order:"+myArray[0]+","+myArray[1]+","+myArray[2]+"</h3>");
+                
+               
+            }
+        }
+        
+     
+        </script>
+        
+
+    </body>
+</html>
