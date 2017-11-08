@@ -2323,3 +2323,6 @@ Stack trace:
 [28-Oct-2017 23:27:59 UTC] PHP Fatal error:  Call to undefined function logout() in /home/ubuntu/workspace/mkhalifa12/labs/lab6/admin.php on line 106
 [28-Oct-2017 23:27:59 UTC] PHP Stack trace:
 [28-Oct-2017 23:27:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab6/admin.php:0
+[28-Oct-2017 23:37:58 UTC] PHP Fatal error:  Call to undefined function logout() in /home/ubuntu/workspace/mkhalifa12/labs/lab6/admin.php on line 106
+[28-Oct-2017 23:37:58 UTC] PHP Stack trace:
+[28-Oct-2017 23:37:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab6/admin.php:0

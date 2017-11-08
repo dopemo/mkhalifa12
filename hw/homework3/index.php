@@ -72,8 +72,16 @@
     </head>
     <style>
     body{
-        /*background-image: url("img/bround.png");*/
+        float:center;
+        text-align:center;
     }
+    h3{
+        text-align:center;
+        border-style:solid;
+        float:center;
+        width:80;
+    }
+    
     </style>
     <body>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -98,6 +106,7 @@
             
         </form>
         </h2>
+        <h3>
          <?php
             if(isset($interest))  //form has not been submitted
             {
@@ -108,27 +117,21 @@
                      
                if($_GET['result']=="products")
                {
-                    echo "<div>";
-                    echo "<h2>";
                     echo "<ul>";
-                    echo "<li>" . "<img src='$products[$i] width='100'>" . "<li>";
+                    echo "<li>" . "<img src='$products[$i] width='5'>" . "<li>";
                     $i++;
                     echo"<li>" . $products[$i] . "<li>";
                     echo "</ul>";
-                    echo "</h2>";
-                    echo "</div>";
+                   
                     
                 
                }
              else if($_GET['result']=="movies")
               {
-                echo "<div>
-                     <h3>
-                     <ul>
+                echo "<ul>
                      <li><img src=$imageURLs[$i] width='100' ></li>
-                     </ul>
-                     </h3>
-                </div>";
+                     </ul>";
+                
               }
              
               
@@ -142,6 +145,7 @@
             }
             
             ?>
+            </h3>
             
         <img src="img/buddy_verified.png" width='200' >
     </body>

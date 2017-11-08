@@ -337,3 +337,31 @@ Stack trace:
 [19-Oct-2017 17:27:00 UTC] PHP Fatal error:  Call to undefined function dropDownLetter() in /home/ubuntu/workspace/mkhalifa12/practice/finalPractice.php on line 94
 [19-Oct-2017 17:27:00 UTC] PHP Stack trace:
 [19-Oct-2017 17:27:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/finalPractice.php:0
+[05-Nov-2017 06:40:12 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 55
+[05-Nov-2017 06:40:36 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 55
+[05-Nov-2017 06:40:39 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 55
+[05-Nov-2017 06:40:52 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 55
+[05-Nov-2017 06:40:56 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 55
+[05-Nov-2017 06:41:23 UTC] PHP Fatal error:  Cannot use isset() on the result of a function call (you can use "null !== func()" instead) in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 55
+[05-Nov-2017 06:45:42 UTC] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ';' in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 57
+[05-Nov-2017 06:46:05 UTC] PHP Parse error:  syntax error, unexpected 'as' (T_AS), expecting ';' in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 57
+[05-Nov-2017 06:46:10 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 56
+[05-Nov-2017 06:46:10 UTC] PHP Stack trace:
+[05-Nov-2017 06:46:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php:0
+[05-Nov-2017 06:46:43 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 56
+[05-Nov-2017 06:46:43 UTC] PHP Stack trace:
+[05-Nov-2017 06:46:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php:0
+[05-Nov-2017 06:46:56 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 56
+[05-Nov-2017 06:46:56 UTC] PHP Stack trace:
+[05-Nov-2017 06:46:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php:0
+[05-Nov-2017 06:47:21 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 56
+[05-Nov-2017 06:47:21 UTC] PHP Stack trace:
+[05-Nov-2017 06:47:21 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php:0
+[05-Nov-2017 06:50:55 UTC] PHP Fatal error:  Function name must be a string in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 56
+[05-Nov-2017 06:50:55 UTC] PHP Stack trace:
+[05-Nov-2017 06:50:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php:0
+[06-Nov-2017 20:42:17 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php on line 3
+[06-Nov-2017 20:42:17 UTC] PHP Stack trace:
+[06-Nov-2017 20:42:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php:0
+[06-Nov-2017 20:42:17 UTC] PHP   2. hyphenate() /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php:15
+[06-Nov-2017 20:42:17 UTC] PHP   3. implode() /home/ubuntu/workspace/mkhalifa12/practice/apiPractice.php:3
