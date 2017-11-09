@@ -4,26 +4,26 @@
         <title> </title>
     </head>
     <h1> Sorting Numbers</h1>
+    <h2>Enter 3 Numbers From 1 to 50</h2>
     <body>
         <form name="myForm" 
-        onsubmit="return validateForm()" method="post">
-        Number: <input type="text" name="fname" style="width:50px;">
+        method="post">
+        Number 1: <input type="text" name="fname" style="width:50px;">
    
         </form>
-        <form name="myForm1" action="/action_page.php"
-        onsubmit="return validateForm()" method="post">
-        Number: <input type="text" name="fname1" style="width:50px;">
+        <form name="myForm1" 
+      method="post">
+        Number 2: <input type="text" name="fname1" style="width:50px;">
     
         </form>
         <form name="myForm2" 
-        onsubmit="return validateForm()" method="post">
-        Number: <input type="text" name="fname2" style="width:50px;">
+             method="post">
+        Number 3: <input type="text" name="fname2" style="width:50px;">
     
         </form>
-        <form name="submiButton" 
-         onsubmit="return validateForm()" method="post">
-            <input type="submit" name="sort">
-            </form>
+         <button onClick="validateForm()">
+            sort
+        </button>
         <script>
             function validateForm()
                 {
@@ -45,9 +45,9 @@
             }
             else
             {
-                document.write("<h2> The biggest number is "+myArray[2]+"</h2>");
+                document.getElementById("log").innerHTML+="<h2> The biggest number is "+myArray[2]+"</h2>";
                
-                    document.write("<h3> The numbers in Acsending order:"+myArray[0]+","+myArray[1]+","+myArray[2]+"</h3>");
+                    document.getElementById("log").innerHTML+="<h3> The numbers in Acsending order:"+myArray[0]+","+myArray[1]+","+myArray[2]+"</h3>";
                 
                
             }
@@ -55,7 +55,12 @@
         
      
         </script>
+        <div id="log">
+            
+        </div>
         
+  <div 
+
 
     </body>
 </html>
