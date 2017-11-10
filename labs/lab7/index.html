@@ -25,6 +25,7 @@
             
             <div id="word"></div>
             <div id="letters">
+            
                 
               
                 <!--<input type="text" id="letterBox" />-->
@@ -32,6 +33,9 @@
                
               
             </div>
+            <div id="hint">
+                <button class="hintBtn btn btn-success">HINT</button>
+               </div>
             
             <div id="man">
                <img src="img/stick_0.png" id="hangImg">
@@ -39,7 +43,8 @@
             
             
             <button class="replayBtn btn btn-success">Play Again</button>
-            </div>
+            
+           
             <div id="lost">
                 <h2>You Lost!</h2>
                 <button class="replayBtn btn btn-warning">Play Again</button>
@@ -82,7 +87,10 @@ var selectedHint = "";
  var remainingGuesses = 6;
  var words = [{word: "snake",hint:"its a reptile"},
                         { word: "monkey", hint:"its a mamal"}, 
-                        {word: "beetle",hint:"its an insect"}];
+                        {word: "beetle",hint:"its an insect"},
+                        {word: "elephant", hint:"this animal has a trunk"},
+                        {word:"Lion", hint:"the king of the jungle"},
+                        {word: "Tiger",hint:"has stripes"}];
 var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 
                             'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 
                             'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
@@ -119,7 +127,7 @@ var alphabet = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
                     document.getElementById("word").innerHTML += letter + " ";
                 }
                 $("#word").append("<br />");
-                $("#word").append("<span class='hint'>Hint: "+selectedHint + "</span>")
+               
             }
             
             function initBoard() {
