@@ -1,11 +1,11 @@
 <?php
     function getDatabaseConnection(){
     
-        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-        $host = $url["host"];
-        $dbname = substr($url["path"], 1);
-        $username = $url["user"];
-        $password = $url["pass"];
+    $host = 'us-cdbr-iron-east-05.cleardb.net';
+    $dbname = 'heroku_5cc899d91ebdb63';
+    $username = 'bc84338c545651'; 
+    $password = '06d1624f';
+    
     //creates db connection
     $dbConn = new PDO("mysql:host=$host; dbname=$dbname",$username, $password);
     
