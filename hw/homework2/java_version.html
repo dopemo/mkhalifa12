@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NFL TEAM GENERATOR</title>
+        <link  href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        
+        
+    </head>
+    <body>
+        <div class='container text-center'>
+            <header>
+               <h1><img src="css/nfllogo2.png"><strong>Team Generater</strong></h1>
+            </header>
+            <div id="Generate">
+                <button class="GBtn btn btn-success">Generate</button>
+            </div>
+             <div id="myOptions">
+            Select the Era you prefer
+            <select id="mySelect" width=100px>
+                <option value=" ">All Era's</option>
+                <option value="older">80's</option>
+                <option value="old">90's</option>
+                <option value="new">00's</option>
+            </select>
+            </form>
+            </div>
+            
+            <div id="teams"></div>
+            
+           
+
+            
+                
+              
+                <!--<input type="text" id="letterBox" />-->
+                <!--<button id="letterBtn">Submit!</button>-->
+               
+              
+            </div>
+            <style>
+            
+            .pic:hover
+            {
+                transition: all .2s ease-in-out; 
+                transform: scale(1.1); 
+            }
+            body
+            {
+                     background-image:url("css/nfl2.png");
+            }
+            h1{
+                font-size:100px;
+                color:white;
+                border-style:solid;
+                background:black;
+            }
+            #teams
+            {
+                
+                border-style:solid;
+                background:black;
+                color:blue;
+            }
+            #myOptions{
+                border-style:solid;
+                background:red;
+                border-color:white;
+                color:blue;
+            }
+
+                   
+                 
+                        
+            </style>
+            <script>
+            //Math.floor(Math.random()*10);
+                var lineBackers = ["L.Taylor","R.White","D.Thomas","S.Mills","R.Lewis","P.Willis"];
+                var quarterBacks = ["J.Montana","D.Marino","B.Favre","W.Moon","T.Brady","P.Manning"];
+                var tailBacks=["B.Sanders","E.Smith","W.Payton","B.Jackson","A.Peterson","L.Tomlinson"];
+                var lineMen=["A.Munoz","J.Upshaw","L.Allen","W.Roaf","W.Jones","O.Pace"];
+                var wRecievers=["J.Rice","M.Irvin","R.Moss","T.Owens","C.Johnson","S.Smith"];
+                var dBacks=["D.Green","L.Hayes","R.Lott","D.Sanders","R.Sherman","D.Revis"];
+               
+                
+                var player;
+                var rand_range;
+                function getRandplayer(position){
+                    if(document.getElementById("mySelect").value=="older")
+                    {
+                        var randNum=Math.floor(Math.random()*2);
+                        
+                    }
+                    else if(document.getElementById("mySelect").value=="old")
+                    {
+                        var randNum=Math.floor(Math.random()*2)+2;
+                    }
+                    
+                    else if(document.getElementById("mySelect").value=="new")
+                    {
+                        var randNum=Math.floor(Math.random()*2)+4;
+                    }
+                    else{
+                        var randNum=Math.floor(Math.random()*6);
+                    }
+
+                   document.getElementById("teams").innerHTML+="<strong>"+position[randNum]+"<strong><br><img src=nfl_players/"+position[randNum] + ".png width='200' onclick='imgClick()' class='pic' > <br><br>";
+                }
+                
+                function getRandTeam(){
+                    document.getElementById("teams").innerHTML="";
+                    getRandplayer(dBacks);
+                    getRandplayer(quarterBacks);
+                    getRandplayer(tailBacks);
+                    getRandplayer(lineMen);
+                    getRandplayer(wRecievers);
+                    getRandplayer(lineBackers);
+                    
+                
+                    
+                    
+                }
+                document.getElementById("Generate").onclick = function() {getRandTeam()};
+              
+                
+                
+                    
+                
+                
+                
+                //     for (tailBack of tailBacks) {
+                        
+                //     document.getElementById("teams").innerHTML += tailBack+"<img src=nfl_players/"+tailBack + ".png width='200'> <br>";
+                // }
+            </script>
+
+    </body>
+</html>
