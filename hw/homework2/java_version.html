@@ -34,6 +34,13 @@
             </form>
             </div>
             
+                
+            players:
+            <select id="players" width=100px>
+            </select>
+            
+            
+            
             <div id="teams"></div>
             
            
@@ -76,6 +83,13 @@
                 border-color:white;
                 color:blue;
             }
+            #satis
+            { border-style:solid;
+                background:black;
+                font-style:blue;
+                color:red;
+                
+            }
 
                    
                  
@@ -112,11 +126,13 @@
                         var randNum=Math.floor(Math.random()*6);
                     }
 
-                   document.getElementById("teams").innerHTML+="<strong>"+position[randNum]+"<strong><br><img src=nfl_players/"+position[randNum] + ".png width='200' onclick='imgClick()' class='pic' > <br><br>";
+              document.getElementById("teams").innerHTML+="<strong>"+position[randNum]+"<strong><br><img src=nfl_players/"+position[randNum] + ".png width='200' onclick='imgClick()' class='pic' > <br><br>";
+              document.getElementById("players").innerHTML+="<option>"+position[randNum]+"</option>";
                 }
                 
                 function getRandTeam(){
-                    document.getElementById("teams").innerHTML="";
+                    document.getElementById("teams").innerHTML="Are you Satified with your Team?<br>";
+                    document.getElementById("teams").innerHTML+="<button id=notsatis class='Pntn btn btn-success'>NO</button><br>";
                     getRandplayer(dBacks);
                     getRandplayer(quarterBacks);
                     getRandplayer(tailBacks);
@@ -129,6 +145,7 @@
                     
                 }
                 document.getElementById("Generate").onclick = function() {getRandTeam()};
+                document.getElementById("teams").onclick=function(){getRandTeam()};
               
                 
                 
