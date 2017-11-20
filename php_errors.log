@@ -381,3 +381,16 @@ Stack trace:
 [09-Nov-2017 19:13:59 UTC] PHP Stack trace:
 [09-Nov-2017 19:13:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/CST336_GroupProject_OnlineCatalog/removeItem.php:0
 [09-Nov-2017 19:13:59 UTC] PHP   2. session_destroy() /home/ubuntu/workspace/mkhalifa12/CST336_GroupProject_OnlineCatalog/removeItem.php:3
+[20-Nov-2017 19:49:53 UTC] PHP Fatal error:  Cannot redeclare dbConnection() (previously declared in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:2) in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 52
+[20-Nov-2017 19:49:53 UTC] PHP Stack trace:
+[20-Nov-2017 19:49:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/rest.php:0
+[20-Nov-2017 19:49:53 UTC] PHP   2. displayUsers() /home/ubuntu/workspace/mkhalifa12/practice/rest.php:29
+[20-Nov-2017 19:50:13 UTC] PHP Fatal error:  Cannot redeclare dbConnection() (previously declared in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:2) in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 52
+[20-Nov-2017 19:50:13 UTC] PHP Stack trace:
+[20-Nov-2017 19:50:13 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/rest.php:0
+[20-Nov-2017 19:50:37 UTC] PHP Fatal error:  Cannot redeclare dbConnection() (previously declared in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:2) in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 52
+[20-Nov-2017 19:50:37 UTC] PHP Stack trace:
+[20-Nov-2017 19:50:37 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/rest.php:0
+[20-Nov-2017 19:50:39 UTC] PHP Fatal error:  Cannot redeclare dbConnection() (previously declared in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:2) in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 52
+[20-Nov-2017 19:50:39 UTC] PHP Stack trace:
+[20-Nov-2017 19:50:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/practice/rest.php:0

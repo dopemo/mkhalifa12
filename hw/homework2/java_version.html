@@ -33,10 +33,13 @@
             </select>
             </form>
             </div>
-            
+            <div id="me">
+                <strong>players</strong>
+            </div>
                 
-            players:
+           
             <select id="players" width=100px>
+                 
             </select>
             
             
@@ -90,6 +93,14 @@
                 color:red;
                 
             }
+            #me
+            {
+                color:blue;
+                font-style:bold;
+                border-style:solid;
+                border-color:white;
+                background:white;
+            }
 
                    
                  
@@ -131,7 +142,6 @@
                 }
                 
                 function getRandTeam(){
-                    document.getElementById("players").innerHTML="";
                     document.getElementById("teams").innerHTML="Are you Satified with your Team?<br>";
                     document.getElementById("teams").innerHTML+="<button id=notsatis class='Pntn btn btn-success'>NO</button><br>";
                     getRandplayer(dBacks);
