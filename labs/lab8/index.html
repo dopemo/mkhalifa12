@@ -4,7 +4,8 @@
 <style type="text/css" id="diigolet-chrome-css">
 </style>
 
-<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.0.js"></script><!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script>
 
     function getCity() {
@@ -22,6 +23,14 @@
               $("#city").html(data.city);
               $("#lat").html(data.latitude);
               $("#long").html(data.longitude);
+              if(data.city==null)
+              {
+                 $("#zpi").html("zip not found");
+              }
+              else
+              {
+                   $("#zpi").html("");
+              }
             
             },
             complete: function(data,status) { //optional, used for debugging purposes
@@ -40,7 +49,7 @@
         $.ajax({
         
         type: "GET",
-        url: "http://cst336-youngmane.c9users.io/mkhalifa12/practice/rest.php",
+        url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
         dataType: "json",
         data: { "state": $("#stateId").val()},
         success: function(data,status) {
@@ -66,17 +75,22 @@
             dataType: "json",
             data: { "username": $("#username").val()},
             success: function(data,status) {
+                var available;
+                //available=" ";
+                
                //alert(data);
                
+               document.getElementById("username1").innerHTML+=available;
                if (!data) {
-                   
-                   alert("USERNAME AVAILABLE!");
+                   available="username Available";
+                 
                    
                } else {
+                   available="username not Available"
                    
-                   alert ("username already taken!");
                }
-            
+              // available="";
+            document.getElementById("username1").innerHTML=available;
             },
             complete: function(data,status) { //optional, used for debugging purposes
             //alert(status);
@@ -84,6 +98,9 @@
             
             });//ajax
     }
+  
+        
+    
     
     //event handlers
     
@@ -92,19 +109,26 @@
         $("#zip").change( function(){ getCity(); } );
         $("#stateId").change(function(){getCounties(); });
         $("#username").change( function(){ checkUsername(); } );
+        $("#submit").change(function(){updateInfo();});
         
     } ); //documentReady
     
-    
+    function onSubmit(){
+        
+    }
 </script>
-
+<style>
+    #username1{
+        color:blue;
+    }
+</style>
 </head>
 
 <body id="dummybodyid">
 
    <h1> Sign Up Form </h1>
 
-    <form onsubmit="return false">
+    <form action="checkUsername.php">
         <fieldset>
            <legend>Sign Up</legend>
             First Name:  <input type="text"><br> 
@@ -112,8 +136,12 @@
             Email:       <input type="text"><br> 
             Phone Number:<input type="text"><br><br>
             Zip Code:    <input type="text" id="zip"><br>
+            <div id="zpi">
+                
+            </div>
             City: <span id="city"></span> 
             <br>
+            
             Latitude: <span id="lat"></span> 
             <br>
             Longitude:<span id="long"></span> 
@@ -127,13 +155,22 @@
 
             </select><br />
             Select a County: <select id = "countyId"></select><br>
-            
+             
             Desired Username: <input type="text" id="username"><br>
+            <div id="username1">
+               
+            </div>
+            
+             
+           
             Password: <input type="password"><br>
             Type Password Again: <input type="password"><br>
-            <input type="submit" value="Sign up!">
+            <input type="submit" value="Sign up!" id="submit">
         </fieldset>
     </form>
+   
+              
+   
 
 
 
