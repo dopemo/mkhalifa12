@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Sample Seach</title>
+  <link  href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+<script>
+$(document).ready(function() {
+    var url = 'http://api.walmartlabs.com/v1/',
+    mode = 'search',
+    input,
+    movieName,
+    key = '?apiKey=d5stkbf6kze5gbq2va7pmjvu';
+
+    $('button').click(function() {
+        document.getElementById("movies").innerHTML=" ";
+        var input = $('#movie').val(),
+            movieName = encodeURI(input);
+        $.ajax({
+            url: url + mode + key + '&query='+movieName ,
+            dataType: 'jsonp',
+            success: function(data) {
+             console.log(data);
+             for(var i=0;i<10;i++){
+                 var single="'";
+                 if(data.results[i].poster_path!=null)
+                 {
+             document.getElementById("movies").innerHTML+="<image src="+single+data.items[i].thumbnailImage+single
+             
+                document.getElementById("movies").innerHTML+="<button id=notsatis class='Pntn btn btn-success'>info</button><br>";
+                 }
+             }
+///"<img src='$products[$i] width='5'>"
+            }
+        });
+    });
+});
+</script>
+</head>
+<h1>My AJAX API APP</h1>
+<style>
+    body{
+        text-align:center;
+        
+    }
+</style>
+<body>
+    
+<input id="movie" type="text" placeholder="search movie" /><button>button</button>
+<br><br>
+<div id="movies">
+    <button>Generate</button>
+</div>
+</body>
+</html>
