@@ -106,7 +106,7 @@ function checkUsername() {
                }
               }
               // available="";
-            document.getElementById("keyword").innerHTML="The key word: "+input+" has been searched: "+"("+count+") times "+available;
+            document.getElementById("keyword").innerHTML="The key word: '"+input+"' has been searched: "+"("+count+") times "+available;
            // available=" ";
             },
             complete: function(data,status) { //optional, used for debugging purposes
