@@ -100,7 +100,7 @@ function checkUsername() {
                } else {
                    
                    
-                   available+="<br> date keyword searched: </strong>"+data[i].searchDate+"<br>";
+                   available+="<br> date keyword searched: </strong>"+"'"+data[i].searchDate+"'<br>";
                    count++;
                    
                }
