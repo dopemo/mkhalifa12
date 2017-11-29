@@ -21,13 +21,15 @@ $(document).ready(function() {
 
     $('button').click(function() {
         document.getElementById("movies").innerHTML=" ";
-        var input = $('#catagories').val();
-        if(input=="default")
+        var input;
+        input = $('#catagories').val();
+        
+        if(input==" ")
         {
             input=$('#movie').val();
         }
-        var ja;
-       ja =$("#movie").val();
+        
+       
             movieName = encodeURI(input);
         $.ajax({
             url: url + mode + key + '&query='+movieName ,
@@ -69,13 +71,19 @@ function getinfo(moviename){
     
 }
 function checkUsername() {
-        //alert("hello")
+        var input;
+        input=$("#movie").val();
+        if(input.length<2)
+        {
+            input=$("#catagories").val();
+        }
+        
         $.ajax({
 
             type: "GET",
             url: "keyWords.php",
             dataType: "json",
-            data: { "keyword": $("#movie").val()},
+            data: { "keyword": input},
             success: function(data,status) {
                 var available=" ";
                 var count=0;
@@ -85,7 +93,7 @@ function checkUsername() {
                
             //   document.getElementById("keyword").innerHTML+=available;
                for(var i=0;i<data.length;i++){
-               if (data[i].keyword!=$("#movie").val()) {
+               if (data[i].keyword!=$("#movie").val()&&data[i].keyword!=$("#catagories").val()) {
                    available+=" ";
                  
                    
@@ -98,7 +106,7 @@ function checkUsername() {
                }
               }
               // available="";
-            document.getElementById("keyword").innerHTML="The key word: "+$("#movie").val()+" has been searched: "+"("+count+") times "+available;
+            document.getElementById("keyword").innerHTML="The key word: "+input+" has been searched: "+"("+count+") times "+available;
            // available=" ";
             },
             complete: function(data,status) { //optional, used for debugging purposes
@@ -109,9 +117,15 @@ function checkUsername() {
     }
     function addKeyWord()
     {
+        var input;
+        input=$("#movie").val();
+        if(input.length<2)
+        {
+            input=$("#catagories").val();
+        }
         $.ajax({
             type: 'POST',
-             data:{"keyword":$("#movie").val()},
+             data:{"keyword":input},
             url:"addKey.php",
            
             success: function(data){
@@ -166,7 +180,7 @@ function getCategories()
 
 </script>
 </head>
-<h1>Wal-mart Api Practice</h1>
+<h1>Shop Walmart</h1>
 <br><br>
 <style>
     body{
@@ -204,7 +218,7 @@ function getCategories()
 
 <button>SEARCH</button>
 Categories:<select id="catagories">
-    <option value="default">select one</option>
+    <option value=" ">select one</option>
     <option value="movies">movies</option>
      <option value="Kitchen ">Kitchen</option>
       <option value="video games">Video Games</option>
@@ -221,5 +235,7 @@ Categories:<select id="catagories">
 <div id='abc'>
     
 </div>
+
 </body>
+<img src="buddy_verified.png">
 </html>
