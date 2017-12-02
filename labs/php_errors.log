@@ -2514,3 +2514,19 @@ Stack trace:
 #2 /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php(63): getPetList()
 #3 {main}
   thrown in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 19
+[02-Dec-2017 19:13:32 UTC] PHP Fatal error:  Cannot redeclare dbConnection() (previously declared in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:2) in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 2
+[02-Dec-2017 19:13:32 UTC] PHP Stack trace:
+[02-Dec-2017 19:13:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/index.php:0
+[02-Dec-2017 19:13:32 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/index.php:4
+[02-Dec-2017 19:13:38 UTC] PHP Fatal error:  Cannot redeclare dbConnection() (previously declared in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:2) in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 2
+[02-Dec-2017 19:13:38 UTC] PHP Stack trace:
+[02-Dec-2017 19:13:38 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/index.php:0
+[02-Dec-2017 19:13:38 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/index.php:4
+[02-Dec-2017 19:14:01 UTC] PHP Fatal error:  Cannot redeclare dbConnection() (previously declared in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:2) in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 2
+[02-Dec-2017 19:14:01 UTC] PHP Stack trace:
+[02-Dec-2017 19:14:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/index.php:0
+[02-Dec-2017 19:14:01 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/index.php:4
+[02-Dec-2017 19:14:03 UTC] PHP Fatal error:  Cannot redeclare dbConnection() (previously declared in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:2) in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 2
+[02-Dec-2017 19:14:03 UTC] PHP Stack trace:
+[02-Dec-2017 19:14:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/index.php:0
+[02-Dec-2017 19:14:03 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/index.php:4
