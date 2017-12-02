@@ -9,7 +9,7 @@
             curl_setopt_array($curl, array(
         
             
-              CURLOPT_URL => "https://api.themoviedb.org/3/search/movie?api_key=8e56967b0a4b849899773bc9ad998665&query=$interest&page=1&include_adult=false",
+              CURLOPT_URL => "https://www.fantasyfootballnerd.com//service//players//json/67ydra5az2mg",
               CURLOPT_RETURNTRANSFER => true,
               CURLOPT_ENCODING => "",
               CURLOPT_MAXREDIRS => 10,
