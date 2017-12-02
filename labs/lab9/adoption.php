@@ -3,7 +3,7 @@
     
      function getPetList() {
             include '../../dbConnection.php';
-            $conn = dbConnection;
+            $conn = dbConnection('c9');
 
 
             $sql = "SELECT *
@@ -35,7 +35,7 @@
                 dataType: "json",
                 data: { "id": $(this).attr('id')},
                 success: function(data,status) {
-                
+                console.log(data)
                    //alert(data);
                    $("#petInfo").html(" Age: " + data.age + "<br>" +
                                       " <img src='img/" + data.pictureURL + "'><br >" + 

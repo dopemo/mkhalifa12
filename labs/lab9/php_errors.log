@@ -1,0 +1,25 @@
+[02-Dec-2017 03:06:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.adoptees' doesn't exist' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php(9): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php on line 9
+[02-Dec-2017 03:06:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.adoptees' doesn't exist' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php(9): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php on line 9
+[02-Dec-2017 03:07:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.adoptees' doesn't exist' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php(9): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php on line 9
+[02-Dec-2017 03:07:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.adoptees' doesn't exist' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php(9): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php on line 9
+[02-Dec-2017 03:08:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.adoptees' doesn't exist' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php:9
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php(9): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/labs/lab9/api/getPetInfo.php on line 9

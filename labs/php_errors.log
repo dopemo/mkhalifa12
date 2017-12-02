@@ -2351,3 +2351,166 @@ Stack trace:
 [01-Dec-2017 19:34:33 UTC] PHP Stack trace:
 [01-Dec-2017 19:34:33 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
 [01-Dec-2017 20:54:33 UTC] PHP Parse error:  syntax error, unexpected '$_FILES' (T_VARIABLE) in /home/ubuntu/workspace/mkhalifa12/labs/lab10/up_load.php on line 4
+[02-Dec-2017 02:48:03 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 02:48:03 UTC] PHP Stack trace:
+[02-Dec-2017 02:48:03 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 02:48:03 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 02:51:53 UTC] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 9
+[02-Dec-2017 02:52:05 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 02:52:05 UTC] PHP Stack trace:
+[02-Dec-2017 02:52:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 02:52:05 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 02:55:53 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 02:55:53 UTC] PHP Stack trace:
+[02-Dec-2017 02:55:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 02:55:53 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 02:57:23 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 02:57:23 UTC] PHP Stack trace:
+[02-Dec-2017 02:57:23 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 02:57:23 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 02:57:25 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 02:57:25 UTC] PHP Stack trace:
+[02-Dec-2017 02:57:25 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 02:57:25 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 02:57:30 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 02:57:30 UTC] PHP Stack trace:
+[02-Dec-2017 02:57:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 02:57:30 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:01:30 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 03:01:30 UTC] PHP Stack trace:
+[02-Dec-2017 03:01:30 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:01:30 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:02:08 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 03:02:08 UTC] PHP Stack trace:
+[02-Dec-2017 03:02:08 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:02:08 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:03:16 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 03:03:16 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:16 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:16 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:03:22 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 03:03:22 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:22 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'type' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 70
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'type' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 70
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'type' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 70
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'type' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 70
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'type' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 70
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'type' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 70
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'type' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 70
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'id' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'name' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 69
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:03:53 UTC] PHP Warning:  Illegal string offset 'type' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 70
+[02-Dec-2017 03:03:53 UTC] PHP Stack trace:
+[02-Dec-2017 03:03:53 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:04:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.adoptees' doesn't exist' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php(14): PDOStatement->execute()
+#1 /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php(63): getPetList()
+#2 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 14
+[02-Dec-2017 03:04:32 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 03:04:32 UTC] PHP Stack trace:
+[02-Dec-2017 03:04:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:04:32 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:05:22 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 03:05:22 UTC] PHP Stack trace:
+[02-Dec-2017 03:05:22 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:05:22 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:05:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'c9.adoptees' doesn't exist' in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php(14): PDOStatement->execute()
+#1 /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php(63): getPetList()
+#2 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 14
+[02-Dec-2017 03:06:00 UTC] PHP Fatal error:  Call to undefined method PDOStatement::fetchaAll() in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 15
+[02-Dec-2017 03:06:00 UTC] PHP Stack trace:
+[02-Dec-2017 03:06:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:06:00 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:06:40 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 03:06:40 UTC] PHP Stack trace:
+[02-Dec-2017 03:06:40 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:06:40 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:06:59 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 03:06:59 UTC] PHP Stack trace:
+[02-Dec-2017 03:06:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:06:59 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:09:00 UTC] PHP Fatal error:  Call to a member function prepare() on a non-object in /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php on line 13
+[02-Dec-2017 03:09:00 UTC] PHP Stack trace:
+[02-Dec-2017 03:09:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:0
+[02-Dec-2017 03:09:00 UTC] PHP   2. getPetList() /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php:63
+[02-Dec-2017 03:12:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_511ec6a2d6821b1'' in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/dbConnection.php(19): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php(6): dbConnection('heroku_511ec6a2...')
+#2 /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php(63): getPetList()
+#3 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 19
+[02-Dec-2017 03:12:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'heroku_511ec6a2d6821b1'' in /home/ubuntu/workspace/mkhalifa12/dbConnection.php:19
+Stack trace:
+#0 /home/ubuntu/workspace/mkhalifa12/dbConnection.php(19): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php(6): dbConnection('heroku_511ec6a2...')
+#2 /home/ubuntu/workspace/mkhalifa12/labs/lab9/adoption.php(63): getPetList()
+#3 {main}
+  thrown in /home/ubuntu/workspace/mkhalifa12/dbConnection.php on line 19
