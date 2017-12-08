@@ -17,6 +17,25 @@ function displayUsers()
 {
     
 global $conn;
+$sql="SELECT * FROM `f_users` ORDER BY fname";
+$namedParameter=array();
+ $stmt = $conn->prepare($sql);
+$stmt->execute();
+$records = $stmt->fetchAll(PDO::FETCH_ASSOC);
+foreach($records as $record)
+{
+ echo "Name: ";
+            echo  $record['username'] . "<br>";
+           echo "<button class='delete' id='" . $record['userId'] . "'>remove</button><br>";
+           echo "<button class='upDate' id='" . $record['username'] . "'>upDate User</button><br>";
+            echo "<hr><br>";
+            
+}
+
+}
+function organizeUsers($param)
+{
+    global $conn;
 $sql="SELECT * FROM `f_users`";
 $namedParameter=array();
  $stmt = $conn->prepare($sql);
@@ -29,7 +48,9 @@ foreach($records as $record)
            echo "<button class='delete' id='" . $record['userId'] . "'>remove</button><br>";
             echo "<hr><br>";
             
-}         
+}
+    
+    
 }
 
   
@@ -45,6 +66,44 @@ foreach($records as $record)
 </style>
 
 <script>
+ $(document).ready(function() {
+        $(".upDate").click( function(){
+            //document.getElementById("userUpd").innerHTML=" First Name* <input type='text' id='f_Name'/> <br> Last Name* <input type='text' id='lastName'/> <br>fantasy score* <input type='text' id='username'/> <br>";
+     $.ajax({
+
+            type: "GET",
+            url: "checkuName.php",
+            dataType: "json",
+             data: { "username": $(this).attr('id')},
+            success: function(data,status) {
+                var available;
+                available=" ";
+        
+              
+             document.getElementById("userUpd").innerHTML=" First Name* <input type='text' value='"+data['fname']+"' id='f_Name'/> <br> Last Name* <input type='text' value='"+data['lname']+"'id='lastName'/> <br>fantasy score* <input type='text' value='"+data['username']+"' id='username'/> <br>";
+             document.getElementById("userUpd").innerHTML+="<button id=updateUser>update</button>";
+            
+             $("#updateUser").click(function(){
+                 var firstName=$("#f_Name").val();
+            var lastName=$("#lastName").val();
+             var username=$("#username").val()
+             var userId=data['userId'];
+                upDateUser(firstName,lastName,username,userId);
+                console.log(firstName+" " +" "+lastName+" "+username);
+             });
+               
+               
+            
+            
+            },
+            complete: function(data,status) { //optional, used for debugging purposes
+            //alert(status);
+            }
+            
+            });
+});
+});
+
 
         $(document).ready(function() {
         $(".delete").click( function(){
@@ -77,6 +136,34 @@ foreach($records as $record)
         }); //.getLink click
         });
    //document.ready
+
+            
+    function upDateUser(firstname,lastname,username,userId){
+           
+              $.ajax({
+
+                type: "POST",
+                url: "updateUser.php",
+                dataType: "json",
+                data: {"fname":firstname,"lname":lastname,"userName":username,"userid":userId},
+                success: function(data,status) {
+                console.log(data)
+                   
+                   //var form=prompt("please enter your user name:");
+                   //checkUserName(form);
+                   //document.getElementById("output").innerHTML=pic;
+                   
+                
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                //alert("user has been successfully removed")
+                }
+                
+            });//ajax
+            
+            
+            
+      }
 function checkPlayer()
 {
             var firstName=$("#firstName").val();
@@ -106,14 +193,14 @@ function checkPlayer()
                  
                    
                } else {
-                   //alert("player is Already in Database!")
-                   console.log("username not Available");
+                   alert(firstName+" "+lastName+" is Already in Database!")
+                   
                    
                }
               
                
                
-                document.getElementById("firstName").innerHTML=" ";
+                
             
             
             },
@@ -137,8 +224,12 @@ function checkPlayer()
            
             success: function(data){
                 console.log(data);
-                alert("player Succefully added!");
-                 
+                alert(playerFname+" "+playerLname+" Succefully added!");
+                 event.preventDefault(); 
+                var url = $(this).data('target');
+                location.replace("picks.php");
+                         
+                                     
                 
             }
             
@@ -150,6 +241,7 @@ function checkPlayer()
 
 <button type="button" class="btn btn-primary" onclick="logout()">Logout</button>
 <br><center>
+    
             First Name* <input type="text" id="firstName"/> <br>
             Last Name* <input type="text" id="lastName"/> <br>
             fantasy score* <input type="text" id="fscore"/> <br>
@@ -161,7 +253,13 @@ function checkPlayer()
                 <option value='K'>Kickers</option>
                 </select><br>
              <button onclick="checkPlayer()">add Player!</button>
+             <input type="submit" name="usercount" value="usercount">
+            <div id='userUpd'>
+                
+            </div>
             </center>
+           
+          
 
 <div id="userSection">
     <h1> Team Owners</h1>
@@ -172,4 +270,6 @@ function checkPlayer()
     ?>
     
 </div>
+
+
 
