@@ -1,37 +1,50 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Fantasy Foot Ball</title>
-         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <h1>FANTASY FOOTBALL</h1>
-        
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">NFL</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-     <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="adoption.php">Picks</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="aboutUs.php">Sign Up</a>
-      </li>
-    </ul>
-  </div>
-  </nav>
-  <br>
+<?php
+
+include'header.php';
+$username=$_POST['username'];
+echo $username;
+
+
+?>
     <script>
+    
+    function check_player(firstname,lastname,fantasyscore,position){ 
+        var i=0;
+    $.ajax({
+
+            type: "GET",
+            url: "checkplayer.php",
+            dataType: "json",
+            data: {"firstname": firstname,"lastname":lastname},
+            success: function(data,status) {
+                var available;
+                available=" ";
+                
+               //alert(data);
+               
+               
+               if (!data) {
+                   addPlayer(firstname,lastname,fantasyscore,position);
+                   
+               } 
+               else
+               { 
+                    i++;
+                   document.getElementById("userName").innerHTML=i;
+                   
+               }
+               
+               
+               
+            
+            
+            },
+            complete: function(data,status) { //optional, used for debugging purposes
+            //alert(status);
+            }
+            
+            });
+    }
     $(document).ready(function() {
         $('button').click(function() {
             document.getElementById("test").innerHTML=" ";
@@ -47,14 +60,35 @@
            success: function (data) {
         console.log(data);
         var position;
-        document.getElementById("test").innerHTML=" ";
         position=$("#position").val();
-        for(var i=0;i<5;i++){
-             document.getElementById("test").innerHTML+=data[position][i]['firstName']+" "+data[position][i]['lastName']+" "+data[position][i]['stats']['FanPtsAgainstOpponentPts'];
+        for(var i=0;i<6;i++){
+             document.getElementById("test").innerHTML+="<a href= '#' class=f_player id="+data[position][i]['id']+">"+data[position][i]['firstName']+" "+data[position][i]['lastName']+" "+data[position][i]['stats']['FanPtsAgainstOpponentPts']+" "+data[position][i]['position']+"</a>";
              var player;
+             //"<a href='#' class='petLink' id=
+             if(data[position][i]['lastName']=="Griffin"){
+                 player=data[position][i]['firstName']+" "+data[position][i]['lastName']+" III"; 
+            
+                 
+             }
+             else{
         player=data[position][i]['firstName']+" "+data[position][i]['lastName'];
-        playerImage(player);
+             }
+             /*
+         var flag;
+         flag=check_player(data[position][i]['firstName'],data[position][i]['lastName']);
+         */
+        var flag;
+        check_player(data[position][i]['firstName'],data[position][i]['lastName'],data[position][i]['stats']['FanPtsAgainstOpponentPts'],data[position][i]['position']);
+        
+             
+        
+         
+        
+        //document.getElementById("test").innerHTML+=playerImage(player);
         document.getElementById("test").innerHTML+="<br>";
+      
+              
+          
         }
         
         console.log(player)
@@ -71,6 +105,7 @@
 }
         });
         });
+         
         
     });
     function playerImage(position){
@@ -80,7 +115,7 @@
         $.ajax(
     {
         type:'GET',
-        url:"https://api.gettyimages.com/v3/search/images/editorial?phrase="+position+" american football",
+        url:"https://api.gettyimages.com/v3/search/images/editorial?phrase="+position+" NFL",
          beforeSend: function (request)
             {
                 request.setRequestHeader("Api-Key", apiKey);
@@ -98,22 +133,48 @@
         alert(JSON.stringify(data,2))
     });
     }
+    function addPlayer(playerFname,playerLname,fScore,position){
+         $.ajax({
+            type: 'POST',
+             data:{"fname":playerFname,"lname":playerLname,"fscore":fScore,"p_position":position},
+            url:"addPlayers.php",
+           
+            success: function(data){
+                console.log(data);
+                
+            }
+            
+        });
+    }
+     
+     
     </script>
     <style>
         body{
             text-align:center;
         }
        
+        img {
+                    transition: -webkit-transform 0.25s ease;
+                    transition: transform 0.25s ease;
+                }
+                
+    img:active {
+                    -webkit-transform: scale(4);
+                    transform: scale(4);
+                }
     </style>
     <button>SEARCH</button>
     <select id="position">
         <option value='QB'>QuarterBack</option>
         <option value='RB'>RunningBack</option>
         <option value='WR'>Wide Reciever</option>
+        <option value='DEF'>Defense</option>
+        <option value='K'>Kickers</option>
     </select>
     <div id="test">
             
         </div>
-        <div id="output"></div>
-    </body>
+        
+<div id="userName"></div>
 </html>

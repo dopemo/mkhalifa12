@@ -84,6 +84,7 @@ function displayDevices(){
         echo  $record['deviceName'] . " " . $record['deviceType'] . " " .
               $record['price'] .  "  " . $record['status'] . 
               "<a target='checkoutHistory' href='checkouthistory.php?deviceId=".$record['deviceId']."'> Checkout History </a> <br />";
+              echo "<div id='image'><div>";
         
     }
 }
@@ -132,7 +133,7 @@ function displayDevices(){
         
         
         
-        <iframe name="checkoutHistory" width="400" height="400"></iframe>
+        
         
         </h3>
 

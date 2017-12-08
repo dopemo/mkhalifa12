@@ -1,23 +1,23 @@
 <?php
 
 
-include '/../dbConnection.php';
+include '../dbConnection.php';
 $conn = dbConnection();
 
 
-$sql = "SELECT *
-        FROM tc_user
-        WHERE username = :username"; 
-
 $namedParameters = array();
-$namedParameters[':username'] = $_GET['username'];
+$namedParameters[':playerId'] = $_GET['id'];
+
+$sql = "SELECT * FROM `player_picks` WHERE `playerId`= :playerId"; 
+
+
+
+
        
         
 $stmt = $conn->prepare($sql);
 $stmt->execute($namedParameters);
 $record = $stmt->fetch(PDO::FETCH_ASSOC);//expecting only one record
-
-//print_r($record);
 
 echo json_encode($record);
 ?>

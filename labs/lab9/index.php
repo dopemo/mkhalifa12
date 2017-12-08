@@ -15,7 +15,7 @@
       margin: auto;
   }
 </style>            
-   <<div class="container">
+   <div class="container">
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->

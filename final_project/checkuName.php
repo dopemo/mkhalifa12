@@ -1,12 +1,12 @@
 <?php
 
 
-include '/../dbConnection.php';
+include '../dbConnection.php';
 $conn = dbConnection();
 
 
 $sql = "SELECT *
-        FROM tc_user
+        FROM f_users
         WHERE username = :username"; 
 
 $namedParameters = array();
