@@ -1,0 +1,289 @@
+body {
+    text-align: center;
+    border-radius:5px; 
+    background:black !important;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 300;
+    font-size: 125%;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 100 !important;
+    font-size: 200%;
+	text-align:center;
+}
+
+p{
+    font-size: 130% !important;
+    font-weight: 200;
+    margin-top: 20px;
+    padding: 0;
+}
+
+#contact{
+    text-align:center;
+    font-style: oblique;
+    color:yellow;
+}
+.green{
+    color: #61cca2;
+}
+#Logo img {
+    opacity: 0;
+    width:30%; 
+}
+#Logo{
+    color: #ffffff;
+}
+#Logo p, #Logo h1{
+    display: none;
+}
+#Login{
+    background: #ffffff;/*I'd say we go with white for all sections - looks more modern imo*/
+}                                /*word ill switch them back */
+#Matching{
+  background-image: url("../img/beach.jpg");
+    padding-top: 150px;
+}
+.left{
+    float: left;
+    text-align: left;
+}
+.half{
+  width: 50%;  
+}
+.product{
+    display: block;
+    margin: auto;
+}
+.centeredContainer{
+    display: table;
+    /*outline: 1px solid red;*/
+}
+.centered{
+    margin: auto;
+    text-align: center;
+}
+
+.centeredCell{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.right{
+    float: right;
+    text-align: left;
+}
+.clear{
+    cLear: both;
+}
+
+#Chat{
+   background: #ffffff; /*I'd say we go with white for all sections - looks more modern imo*/
+}
+#Chat img{
+   box-shadow: 2px 2px 10px #66666633;
+}
+.contain{
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+.wrapper{
+    min-height: 100vh;
+    padding: 0;
+    /*outline: green 1px solid;*/
+}
+.product{
+    box-shadow: 2px 2px 10px #66666633;
+}
+#Location{
+    background: #ffffff;
+}
+.section{
+}
+
+#BackToTop{
+    position: fixed;
+    background: #61cca299;
+    color: #ffffff;
+    border: 1px solid #61cca2;
+    cursor: pointer;
+}
+
+#SignUp{
+    display: none;
+    position: fixed;
+    top: 32px;
+    right: 32px;
+    width: 10%;
+    cursor: pointer;
+}
+
+#BackToTop, #ScrollDown{
+    display: none;
+    bottom: 32px;
+    right: 32px;
+    width: 64px;
+    height: 64px;
+    font-size: 48px;
+    line-height: 64px;
+}
+
+#BackToTop{
+    text-align: center;
+}
+
+#ScrollDown{
+    color: #ffffff;
+    position: fixed;
+    cursor: pointer;
+    -ms-transform: rotate(16deg); /* IE 9 */
+    -webkit-transform: rotate(16deg); /* Chrome, Safari, Opera */
+    transform: rotate(16deg);
+}
+
+#ScrollDown span{
+    position: absolute;
+    width: 200px;
+    font-weight: 100;
+    font-size: 14px;
+    -ms-transform: rotate(-16deg); /* IE 9 */
+    -webkit-transform: rotate(-16deg); /* Chrome, Safari, Opera */
+    transform: rotate(-16deg);
+    bottom: -16px;
+}
+
+.navItem{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    display: block;
+    opacity: 0;
+    line-height: 32px;
+    font-size: 30px;
+    text-align: right;
+    padding-right: 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 100;
+}
+
+
+.square{
+    font-weight: 300;
+    padding-right: 20px;
+}
+
+.itemTitle{
+    font-weight: 100;
+}
+
+footer{
+    color: #ffffff;
+}
+
+.title{
+    font-size: 300%;
+    color: #61cca2;
+}
+
+.fadeIn{
+    opacity: 0;
+}
+
+a, a:hover, a:visited{
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-size: 24px;
+}
+
+footer p{
+    font-weight: 100;
+    font-size: 18px;
+}
+
+button{
+    cursor: pointer;
+}
+
+.debug{
+    outline: 1px solid red;
+}
+ {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 200%;
+	height:200%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 100px;
+}
+
+.col-25 {
+    float: center;
+    width: 75%;
+    margin-top: 25px;
+}
+
+.col-75 {
+    text-align:center;
+    text-align:center;
+    width: 50%;
+    margin-top: 25px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#subject{
+	float:center;
+}
+abel {
+    float: left;
+}
+
+input {
+    width: 400%;
+    box-sizing:border-box;
+}
+
+span {
+    display: block;
+    overflow: hidden;
+}
