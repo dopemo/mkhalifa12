@@ -25,7 +25,7 @@ $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach($records as $record)
 {
  echo "Name: ";
-            echo  $record['username'] . "<br>";
+            echo  $record['username'] ." " .$record['fname'] ." " . $record['lname'] ."<br>";
            echo "<button class='delete' id='" . $record['userId'] . "'>remove</button><br>";
            echo "<button class='upDate' id='" . $record['username'] . "'>upDate User</button><br>";
             echo "<hr><br>";
@@ -44,7 +44,7 @@ $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
 foreach($records as $record)
 {
  echo "Name: ";
-            echo  $record['username'] . "<br>";
+            echo  $record['username'] ." " .$record['fname'] ."<br>";
            echo "<button class='delete' id='" . $record['userId'] . "'>remove</button><br>";
             echo "<hr><br>";
             
@@ -80,13 +80,13 @@ foreach($records as $record)
                 available=" ";
         
               
-             document.getElementById("userUpd").innerHTML=" First Name* <input type='text' value='"+data['fname']+"' id='f_Name'/> <br> Last Name* <input type='text' value='"+data['lname']+"'id='lastName'/> <br>fantasy score* <input type='text' value='"+data['username']+"' id='username'/> <br>";
+             document.getElementById("userUpd").innerHTML=" First Name* <input type='text' value='"+data['fname']+"' id='f_Name'/> <br> Last Name* <input type='text' value='"+data['lname']+"' id='lastName'/> <br>fantasy score* <input type='text' value='"+data['username']+"' id='username'/> <br>";
              document.getElementById("userUpd").innerHTML+="<button id=updateUser>update</button>";
-            
+            console.log(data['lname']);
              $("#updateUser").click(function(){
                  var firstName=$("#f_Name").val();
             var lastName=$("#lastName").val();
-             var username=$("#username").val()
+             var username=$("#username").val();
              var userId=data['userId'];
                 upDateUser(firstName,lastName,username,userId);
                 console.log(firstName+" " +" "+lastName+" "+username);
