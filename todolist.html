@@ -1,0 +1,40 @@
+<html>
+    <h1>To Do List</h1>
+<div id="Mohamad">
+<fieldset>
+        <legend>Mohamad Tasks</legend>
+        <input type="radio" name="track" id="track" value="track" /><label for="track">Notes to Textfile</label><br />
+        <input type="radio" name="event" id="event" value="event"  /><label for="event">Metadata from photos saved</label><br />
+        <input type="radio" name="message" id="message" value="message" /><label for="message">Concept of proof with firebase</label><br />
+  </fieldset>
+   <textarea id="text" rows="4" cols="50">
+</textarea>
+  <p id="newPlace"><p>
+  </div>
+ <button type="button"
+onclick="myFunction()">
+Update</button>
+<script>
+ 
+ 
+   
+   function myFunction() {
+    // var x = document.getElementById("text").value;
+    // document.getElementById("newPlace").innerHTML+= x;
+    // document.getElementById("text").value=" ";
+    var txtFile="todo.txt";
+    var file=new File(txtFile,3);
+    file.open("r");
+    var str="";
+    while(!file.eof){
+        str+=file.readln()+"\n";
+    }
+    file.close();
+    alert(str);
+        //var n=fread(file);
+        document.getElementById("newPlace").innerHTML=n;
+    
+    
+}
+
+</script>
